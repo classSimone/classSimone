@@ -1,0 +1,155 @@
+
+body{
+	/* overflow: hidden; */
+	margin: 0;
+}
+
+.topnav{
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+	width: 100%;
+
+}
+
+.topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 1.6em;
+}
+
+.topnav a:hover{
+	background-color: #ddd;
+	color: black;
+}
+
+.topnav a.active{
+	background-color: rgb(211, 230, 211);
+	color: black;
+}
+
+.topnav .icon{
+	display: none;
+}
+
+
+.section{
+	min-height: 100vh;
+}
+
+#section1{
+	background-color: mediumseagreen;
+	display: grid;
+	place-items: center;
+}
+
+#section2{
+	background-color: beige;
+	display: grid;
+	/* grid-column: repeat (1fr); */
+	grid-template-columns: repeat(4, 1fr);
+}
+
+#section2 div{
+	background-color: rgb(220, 224, 163);
+	margin: auto;
+	height: 80%;
+	width: 80%;
+	padding: 16px;
+	align-content: center;
+}
+
+#section2 div img{
+	width: 100%;
+}
+
+
+#section3{
+	background-color: aquamarine;
+}
+
+
+h1 {
+	font-size: 6rem;
+	color: green;
+	letter-spacing: -1px;
+}
+
+
+.divClock{
+	text-align: center;
+	/* margin: auto; */
+	/* border: 1px solid greenyellow; */
+}
+
+
+.clk{
+	font-size: 16em;
+	color: white;
+	display: inline;
+	transition: 0.8s;
+}
+
+.clk:hover{
+	/* font-size: 10em; */
+	color: greenyellow;
+}
+
+
+.div02{
+	display: grid;
+	/* grid-column: repeat (1fr); */
+	grid-template-columns: repeat(4, 1fr);
+	background-color: rgb(224, 129, 112);
+}
+
+.div02 div{
+	background-color: rgb(220, 224, 163);
+	margin: auto;
+	height: 80%;
+	width: 80%;
+}
+
+.div03{
+	display: grid;
+	place-items: center;
+	background-color: rgb(188, 170, 226);
+}
+
+
+
+@media(max-width: 900px){
+
+
+	.div01{
+		/* background-color: rgb(145, 68, 68); */
+	}
+	.clk{
+		font-size: 10em;
+	}
+
+	.div02{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+}
+
+@media(max-width: 600px){
+
+	.div01{
+		/* background-color: red; */
+	}
+	.clk{
+		font-size: 8em;
+
+	}
+	.div02{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+}
