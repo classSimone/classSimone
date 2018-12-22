@@ -26,7 +26,7 @@ db.collection("news").limit(3).get()
 	querySnapshot.forEach((doc) => {
 		console.log(`${doc.id} => ${doc.data().titolo}`);
 		const div = document.createElement('div');
-		div.id='box-'+i;
+		// div.id='box-'+i;
 		const pic = document.createElement('img');
 		pic.src=doc.data().pic;
 		const title = document.createElement('h3');
